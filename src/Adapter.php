@@ -97,7 +97,7 @@ class Adapter
     {
         $options = [
             // Amazon S3 api version
-            'version'   => 2,
+            'version'   => 3,
             'prefix'    => null
         ];
 
