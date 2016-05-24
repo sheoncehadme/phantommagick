@@ -654,7 +654,7 @@ class Converter extends Runner
 
             unlink($tempFilename);
 
-            return $this->filesystem->put($filename, $contents, ['visibility' => $this->acl]);
+            return $this->filesystem->put($filename, $contents, ['visibility' => $this->acl, 'ServerSideEncryption' => 'AES256']);
         }
     }
 
